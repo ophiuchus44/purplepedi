@@ -149,8 +149,6 @@ The long-term product idea is a **standardized chassis** with a **swappable rear
 - **Farm / off-road utility**: a battery-powered, modular “farm tool” on the same chassis. The goal is a high-quality utility platform that can do light work where gas equipment (or a tractor) is overkill.
   - Inspiration: [Oh Wow Cycles — Conductor Plus Rickshaw](https://ohwowcycles.com/products/conductor-plus-rickshaw?srsltid=AfmBOooHw1vMoubOlGuH5co1lUyCXWmsJIs_IuJbAezBYYCL5oy56u9Y)
 
-  ![Truckbed top concept v1](images/truckbed-v1.png)
-
   - Consider **thicker / higher-volume tires** (and potentially different tread) to improve comfort and traction off-road.
 
 ### Farm top: example implements / attachments

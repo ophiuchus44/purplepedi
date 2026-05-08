@@ -10,16 +10,17 @@ The Rolls Royce of PediCabs
 2. [What we are building instead](#2-what-we-are-building-instead)
 3. [Goals and constraints](#3-goals-and-constraints)
 4. [Chassis and layout philosophy](#4-chassis-and-layout-philosophy)
-5. [Rear: suspension, wheels, and ride quality](#5-rear-suspension-wheels-and-ride-quality)
-6. [Drivetrain and reliability](#6-drivetrain-and-reliability)
-7. [Front suspension and steering](#7-front-suspension-and-steering)
-8. [Brakes](#8-brakes)
-9. [Carriage, passengers, and styling](#9-carriage-passengers-and-styling)
-10. [Electrical: battery, lighting, signals, accessories](#10-electrical-battery-lighting-signals-accessories)
-11. [Parking brake and operator workflow](#11-parking-brake-and-operator-workflow)
-12. [Open decisions and notes](#12-open-decisions-and-notes)
-13. [Reference images](#13-reference-images)
-14. [PurplePedi: early days (archive)](#14-purplepedi-early-days-archive)
+5. [Modular platform: one chassis, many “tops”](#5-modular-platform-one-chassis-many-tops)
+6. [Rear: suspension, wheels, and ride quality](#6-rear-suspension-wheels-and-ride-quality)
+7. [Drivetrain and reliability](#7-drivetrain-and-reliability)
+8. [Front suspension and steering](#8-front-suspension-and-steering)
+9. [Brakes](#9-brakes)
+10. [Carriage, passengers, and styling](#10-carriage-passengers-and-styling)
+11. [Electrical: battery, lighting, signals, accessories](#11-electrical-battery-lighting-signals-accessories)
+12. [Parking brake and operator workflow](#12-parking-brake-and-operator-workflow)
+13. [Open decisions and notes](#13-open-decisions-and-notes)
+14. [Reference images](#14-reference-images)
+15. [PurplePedi: early days (archive)](#15-purplepedi-early-days-archive)
 
 ---
 
@@ -112,7 +113,7 @@ Battery must support **e-assist motor(s)**, **running lights**, **turn signals /
 Plug-in after shifts is fine; **regen / alternator** optional future enhancement—not required for v1.
 
 **Operator workflow**  
-Parking brake behavior matters for pickups, drop-offs, and tipping moments—see [§11](#11-parking-brake-and-operator-workflow).
+Parking brake behavior matters for pickups, drop-offs, and tipping moments—see [§12](#12-parking-brake-and-operator-workflow).
 
 **Aesthetic and brand**  
 Luxury-first: materials and components should tolerate **commercial duty** and still photograph well.
@@ -128,7 +129,66 @@ Luxury-first: materials and components should tolerate **commercial duty** and s
 
 ---
 
-## 5. Rear: suspension, wheels, and ride quality
+## 5. Modular platform: one chassis, many “tops”
+
+The long-term product idea is a **standardized chassis** with a **swappable rear “top” module**. The chassis (steering, brakes, suspension, drivetrain, electrical backbone) stays consistent, while the rear payload area can be swapped to fit different jobs and different customers.
+
+**Why it matters**
+
+- **Owners can change use-cases** without buying a whole new vehicle.
+- **Fleet operators** can standardize maintenance on one platform.
+- **Seasonal business** becomes practical (tourism vs utility vs events).
+- **Custom builds** become practical (events, niche commercial work, festivals).
+
+**First “top” (v1)**
+
+- **Horse carriage / luxury passenger cabin** (the current PurplePedi concept).
+
+**Second “top” (v2)**
+
+- **Farm / off-road utility**: a battery-powered, modular “farm tool” on the same chassis. The goal is a high-quality utility platform that can do light work where gas equipment (or a tractor) is overkill.
+  - Inspiration: [Oh Wow Cycles — Conductor Plus Rickshaw](https://ohwowcycles.com/products/conductor-plus-rickshaw?srsltid=AfmBOooHw1vMoubOlGuH5co1lUyCXWmsJIs_IuJbAezBYYCL5oy56u9Y)
+
+  ![Truckbed top concept v1](images/truckbed-v1.png)
+
+  - Consider **thicker / higher-volume tires** (and potentially different tread) to improve comfort and traction off-road.
+
+### Farm top: example implements / attachments
+
+Think of the rear as a **truck bed + mounting interface**. The “attachments” can be swappable just like the tops:
+
+![Farm top concept v2](images/farmconcept-v2.png)
+
+- **Seed spreading**: broadcast spreader or drop spreader for cover crop, grass, or small grains.
+- **Compost / soil**: compost tote + chute, or a small auger/dispensing hopper for amendments.
+- **Water / irrigation**: small tank + hose reel for spot watering (trees, new plantings).
+- **Spraying**: low-volume sprayer for orchard/vineyard rows (where appropriate and safe).
+- **Tool carrier**: racks for shovels, rakes, hand tools, buckets; lockable storage.
+- **Harvest / field bins**: modular crates, produce bins, or insulated cooler box for farm stands.
+- **Tow / pull-behind**: small trailer for mulch, tools, or materials (light-duty).
+- **Power interface**: a protected DC accessory bus (12/24/48V) for pumps, lights, and simple electric attachments.
+
+**Why this is exciting**
+
+- Quiet, low-maintenance utility platform (no gas) for farms, estates, parks, campuses, and trails.
+- One chassis that can be re-used for passenger tours *or* utility work by swapping the top.
+
+**Other “tops” to offer**
+
+- **Cargo**: deliveries, park maintenance, event load-in/out.
+- **Trash / compost pickup**: municipal and campus routes with tight turns.
+- **Advertising / activation**: billboards, brand experiences, sampling.
+- **Parks department**: tools, bins, and light duty transport on paths.
+
+**Owner-built / custom tops**
+
+The platform should also support **fully custom builds** so owners can create whatever they need on top (events, niche commercial work, special payloads).
+
+Implementation note: define a mechanical + electrical interface (mount points, load rating, wiring harness connectors) so swapping tops is safe and repeatable.
+
+---
+
+## 6. Rear: suspension, wheels, and ride quality
 
 This section leads the technical story **from the contact patch backward**: fix ride and load handling first, then propagate decisions forward.
 
@@ -157,7 +217,7 @@ Leaf spring part reference: `http://rvtraderaccessories.com/products/double-eye-
 
 ---
 
-## 6. Drivetrain and reliability
+## 7. Drivetrain and reliability
 
 **Design intent**  
 Avoid a fragile **long-run bicycle derailleur stack** as the core answer for a loaded commercial vehicle. Prefer solutions with **predictable ratios**, **clean chainline**, and **low adjustment drama** (internal gear hubs, gearbox-at-frame, or other architectures TBD with the frame builder).
@@ -177,7 +237,7 @@ The image below illustrates the **axle-mounted disc** and **chain drive** layout
 
 ---
 
-## 7. Front suspension and steering
+## 8. Front suspension and steering
 
 **Fork direction**  
 High-end, **duty-rated** front suspension appropriate to **mass and braking**, not a passenger fork chosen from the MTB catalog by vibe alone.
@@ -187,7 +247,7 @@ High-end, **duty-rated** front suspension appropriate to **mass and braking**, n
 
 ---
 
-## 8. Brakes
+## 9. Brakes
 
 **Front caliper (primary)**  
 [Shimano Saint BR‑M820](https://bike.shimano.com/en-NA/products/components/pdp.P-BR-M820.html)
@@ -221,7 +281,7 @@ High-end, **duty-rated** front suspension appropriate to **mass and braking**, n
 
 ---
 
-## 9. Carriage, passengers, and styling
+## 10. Carriage, passengers, and styling
 
 **Layout**  
 Rear seating should reinforce the **“riders higher than driver”** sightline goal for Main Street–style routes vs event staging.
@@ -257,7 +317,7 @@ Parallel direction: **wood body** language (commissioned coachwork vs shop-built
 
 ---
 
-## 10. Electrical: battery, lighting, signals, accessories
+## 11. Electrical: battery, lighting, signals, accessories
 
 - **Battery**: sized for **motor + lights + signals + USB**; location **under seats** and/or **rear trunk**.
 - **Charging**: end-of-shift plug-in; regen optional later.
@@ -267,7 +327,7 @@ Parallel direction: **wood body** language (commissioned coachwork vs shop-built
 
 ---
 
-## 11. Parking brake and operator workflow
+## 12. Parking brake and operator workflow
 
 During pickups and drop-offs the driver often needs **hands free** to help passengers and close the sale (tips). A **real parking brake** (or equivalent positive hold) matters more than on a leisure bike.
 
@@ -279,14 +339,14 @@ During pickups and drop-offs the driver often needs **hands free** to help passe
 
 ---
 
-## 12. Open decisions and notes
+## 13. Open decisions and notes
 
 Consolidated from ongoing email / design threads:
 
 - **Luxury-first**: do not cheap out on duty-rated systems.
 - **AI renders**: useful for shape exploration; watch for wrong ergonomics (e.g. seat height vs driver).
 - **Wood carriage + purple upholstery**: color pairing TBD.
-- **Historical ops**: early service-era photos live in [`images/oldschool/`](images/oldschool/) (see [§14](#14-purplepedi-early-days-archive)).
+- **Historical ops**: early service-era photos live in [`images/oldschool/`](images/oldschool/) (see [§15](#15-purplepedi-early-days-archive)).
 
 **Still floating from email / sketches**
 
@@ -294,7 +354,7 @@ Consolidated from ongoing email / design threads:
 
 ---
 
-## 13. Reference images
+## 14. Reference images
 
 | Image | Description |
 | --- | --- |
@@ -313,7 +373,7 @@ Consolidated from ongoing email / design threads:
 
 ---
 
-## 14. PurplePedi: early days (archive)
+## 15. PurplePedi: early days (archive)
 
 Photos from the first era running the pedicab as a **commercial service**—unveiling, training, weddings, riders on board. Not build specs; just history and vibe.
 

@@ -6,6 +6,8 @@ I started in **commercial pedicabs**, but PurplePedi is not meant to end as “a
 
 **First goal:** ship the **farm / modular work top** and prove the chassis and mounting interfaces in real use. Then layer the showpiece tops on top of a platform that already works.
 
+**Ride quality (explicit):** PurplePedi is intended to use **independent rear suspension (IRS)**—not a single beam axle with a “good enough” trike ride. The target is a **smooth, controlled ride** for passengers and operators on rough pavement, chipseal, fields, and two-track: isolation from bumps, both rear wheels staying planted in ruts and side-slope, and less pitching than a solid rear. That comfort bar is part of the **luxury / small-vehicle** positioning, not an afterthought.
+
 <a id="visual-teasers"></a>
 
 **One frame for both:** the **same chassis** is meant to carry **farm / modular work** duty _and_ **luxury carriage / pedicab-style** passenger service—different tops, shared platform. Below are **small teasers** only (not build drawings). Full-size references stay in **[§5](#5-modular-platform-one-chassis-many-tops)** (farm / modular) and **[§10](#10-carriage-passengers-and-styling)** (carriage / north-star).
@@ -134,6 +136,9 @@ Parking brake behavior matters for pickups, drop-offs, and tipping moments—see
 **Aesthetic and brand**  
 Luxury-first: materials and components should tolerate **commercial duty** and still photograph well.
 
+**Rear suspension architecture**  
+Treat **independent rear suspension** as a **first-class requirement** for the platform (farm and carriage tops). Solid-axle trikes can work for slow utility, but they trade away the **smooth ride and traction** this project is chasing—especially when the rear is loaded, offset, or crossing uneven ground.
+
 ---
 
 ## 4. Chassis and layout philosophy
@@ -230,6 +235,30 @@ Implementation note: define a mechanical + electrical interface (mount points, l
 ## 6. Rear: suspension, wheels, and ride quality
 
 This section leads the technical story **from the contact patch backward**: fix ride and load handling first, then propagate decisions forward.
+
+**Independent rear suspension (IRS) — intent**  
+The chassis should pursue **true IRS** (each rear wheel moves on its own kinematic path) so the vehicle can **filter bumps**, **keep both tires loaded** on uneven surfaces, and avoid the **hobby-horse pitch** common when one wheel hits a hole and the whole rear axle tilts. That directly supports the **“smooth ride”** promise for operators (long shifts, farm tasks) and passengers (comfort and perceived quality).
+
+**Why “smooth” is non-negotiable here**  
+Rough inputs do not only feel bad—they **fatigue passengers**, **shake cargo**, and **feed impulse loads into the frame, motor mounts, and chain path**, which accelerates wear and noise. IRS is not the only tool (tires, damping, and sprung mass matter too), but it is the main lever for **rear axle independence** on a three-wheel platform.
+
+**Reference hardware class (not a locked BOM)**  
+Off-road **buggy / crosskart** markets package compact **trailing-arm or A-arm rear modules** with hubs, brakes, and pickup points—useful as a **reference for layout and components**, even though PurplePedi loads and gearing will differ.
+
+![Rear suspension kit — crosskart / buggy style (reference class for compact IRS hardware)](images/Rear-Suspension-Kit-for-Crosskart-Buggy.jpg)
+
+**Challenges (call them out early)**  
+IRS plus human-scale pedal assist is **not** a bolt-on bicycle problem:
+
+- **Torque path**: independent wheels want a **split torque** solution—**differential**, **two hub motors**, **motor + differential**, or a **single driven wheel** (simple but asymmetric). A **long bicycle chain** to both rear corners does not map cleanly to IRS without **jackshafts**, **sliding joints**, or **complex chain tension** as each arm cycles.
+- **“Car-like” gearing**: loaded duty favors **fixed or hub reduction**, **gearbox at the frame**, **CVT**, or **single-speed reduction to axle**—not a **multi-speed derailleur** hunting under passenger load (see [§7](#7-drivetrain-and-reliability)).
+- **Unsprung mass**: heavy hubs, brakes, and half-shafts at the wheel fight ride quality unless spring/damper choices account for it.
+- **Packaging**: motor, reduction, and battery must live **around** suspension pivots without binding steering, travel, or service access.
+- **Alignment and maintenance**: two corners means **bushings, toe, and camber** discipline—more like a small car than a bike shop tune-up.
+- **Cost / complexity**: IRS trades **simplicity** for **ride and traction**; that trade is intentional for PurplePedi but real on BOM and build.
+
+**Product direction (question the README is answering)**  
+For a **motorcycle-scale / go-kart-scale off-road** machine with **pedal + e-assist**, there is rarely one “perfect” shelf IRS that also solves **bicycle-chain drive to both wheels**. Real builds usually converge on **hub motors**, **mid-drive through a differential**, or **mid-drive to one side with mechanical compromise**. Crosskart/buggy IRS kits help with **suspension corners**; the **final-drive architecture** still has to be chosen for **torque, chainline, and service** together with the frame builder.
 
 **Tires**  
 Target a wheel/tire package that improves **rollover and comfort** vs small BMX-scale rubber on heavy trikes. Current reference direction:
@@ -427,6 +456,7 @@ Consolidated from ongoing email / design threads:
 | `images/farm-v1-concept2.PNG`                  | Farm / utility v1 — frame, IRS, drivetrain — §5 (between truck-bed sketch and farm concept v2) |
 | `images/farmconcept-v2-trailer-trays.png`      | Farm concept + plug flats on flatbed & pull-behind (§5)      |
 | `assets/media/image3.png`                      | Leaf spring reference (§6)                                   |
+| `images/Rear-Suspension-Kit-for-Crosskart-Buggy.jpg` | Crosskart / buggy rear IRS kit — reference hardware class (§6) |
 | `images/oldschool/*.png`                       | Early PurplePedi ops archive (§15)                           |
 
 ---

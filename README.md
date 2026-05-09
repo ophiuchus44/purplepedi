@@ -1,6 +1,10 @@
 # PurplePedi
 
-The Rolls Royce of PediCabs
+The Rolls Royce of Trikes
+
+I started in **commercial pedicabs**, but PurplePedi is not meant to end as “a nicer pedicab.” The goal is a **modular, purpose-built trike platform**—one chassis that can wear different **tops** for farm work, cargo, service fleets, events, and (later) a luxury passenger carriage—not pedicab-only.
+
+**First goal:** ship the **farm / modular work top** and prove the chassis and mounting interfaces in real use. Then layer the showpiece tops on top of a platform that already works.
 
 ---
 
@@ -91,7 +95,7 @@ Values below are as listed on the [Broadway product page](https://pedicab.com/pr
 
 ## 2. What we are building instead
 
-PurplePedi targets a **purpose-built chassis**: defined load paths, suspension and wheel package chosen for **loaded ride quality**, and a drivetrain philosophy aimed at **predictable torque and low drama** (no “hunting gears” in traffic). Luxury is **quiet, smooth, and boringly reliable**—then we layer carriage styling and finishes on top.
+PurplePedi targets a **purpose-built chassis**: defined load paths, suspension and wheel package chosen for **loaded ride quality**, and a drivetrain philosophy aimed at **predictable torque and low drama** (no “hunting gears” in traffic). The **first build** is aimed at a **farm / modular work top**; a **luxury horse-carriage passenger top** is planned as the **second** top on the same platform—same “quiet, smooth, boringly reliable” bar, different job.
 
 ---
 
@@ -105,6 +109,9 @@ Target **~50 inches** overall width (or whatever envelope you finalize) so the v
 
 **Gross weight and passengers**  
 Design for **multiple passengers** plus driver without treating the frame like an oversized bicycle. State design gross weight assumptions here when known.
+
+**Driver frame geometry**  
+Use a **step-through** (low-step) driver frame—not a traditional **high top-tube / diamond** layout typical of men’s-style bicycles. Easier mount/dismount in traffic, at stops, and while helping passengers. Reference layout in [§4](#4-chassis-and-layout-philosophy).
 
 **Electrical loads**  
 Battery must support **e-assist motor(s)**, **running lights**, **turn signals / brake indication**, and **accessory USB charging** for phones. Battery can be **large and non-portable** if it lives in a dedicated bay.
@@ -122,6 +129,12 @@ Luxury-first: materials and components should tolerate **commercial duty** and s
 
 ## 4. Chassis and layout philosophy
 
+### Driver area: step-through frame (required)
+
+The driver’s portion of the chassis should follow a **step-through** pattern: a **low or dropped “top” tube** so the rider can step into the cockpit without swinging a leg over a high bar. Avoid the **high horizontal top tube** of a classic diamond-frame men’s bicycle—wrong ergonomics for a working pedicab where you get on and off constantly, help passengers, and move around the bike at stops.
+
+<img src="images/step-through-frame-reference.png" alt="Step-through frame reference (example bicycle — not final PurplePedi geometry)" width="280" />
+
 - **Trike / carriage logic**, not “big bike with a box.”
 - **Passenger sightlines**: riders **sit higher than the driver** where possible so they are not staring at the driver’s back (contrast with low “Main Street”-style rear layouts).
 - **Battery packaging**: under seats and/or a **rear trunk** behind the carriage so pack volume is not the limiting factor.
@@ -131,7 +144,7 @@ Luxury-first: materials and components should tolerate **commercial duty** and s
 
 ## 5. Modular platform: one chassis, many “tops”
 
-The long-term product idea is a **standardized chassis** with a **swappable rear “top” module**. The chassis (steering, brakes, suspension, drivetrain, electrical backbone) stays consistent, while the rear payload area can be swapped to fit different jobs and different customers.
+The long-term product idea is a **standardized chassis** with a **swappable rear “top” module**. The chassis (steering, brakes, suspension, drivetrain, electrical backbone) stays consistent, while the rear payload area can be swapped to fit different jobs and different customers. **Build order:** ship the **farm / work top first**, then the **luxury horse-carriage passenger top**—so the modular bed and interfaces are proven before the showpiece carriage.
 
 **Why it matters**
 
@@ -142,12 +155,8 @@ The long-term product idea is a **standardized chassis** with a **swappable rear
 
 **First “top” (v1)**
 
-- **Horse carriage / luxury passenger cabin** (the current PurplePedi concept).
-
-**Second “top” (v2)**
-
 - **Farm / off-road utility**: a battery-powered, modular “farm tool” on the same chassis. The goal is a high-quality utility platform that can do light work where gas equipment (or a tractor) is overkill.
-  - Inspiration: [Oh Wow Cycles — Conductor Plus Rickshaw](https://ohwowcycles.com/products/conductor-plus-rickshaw?srsltid=AfmBOooHw1vMoubOlGuH5co1lUyCXWmsJIs_IuJbAezBYYCL5oy56u9Y)
+  - **Competition (urban / light utility—not farm-first)**: products like the [Oh Wow Cycles Conductor Plus Rickshaw](https://ohwowcycles.com/products/conductor-plus-rickshaw) and [Vok U](https://vokbikes.com/vok-u/) show what exists for narrow paths, city maintenance, and service teams. They are **not really built for farm work**—different duty cycle, different loads, and different attachment expectations than a field-first modular bed.
 
   - Consider **thicker / higher-volume tires** (and potentially different tread) to improve comfort and traction off-road.
 
@@ -155,7 +164,13 @@ The long-term product idea is a **standardized chassis** with a **swappable rear
 
 Think of the rear as a **truck bed + mounting interface**. The “attachments” can be swappable just like the tops:
 
+![Farm top — hand-drawn frame sketch v1](images/framefarm-v1.png)
+
+_Sketch note:_ I’d like the **truck-bed tail / back door** to hinge so it can **open down to the ground**—a ramp or load bridge for rolling equipment and heavy bins on/off the bed. **Height and length still need to be checked** against real gear and ground clearance; for now it’s a “would be nice” direction, not a locked spec.
+
 ![Farm top concept v2](images/farmconcept-v2.png)
+
+_The farm concept image above is AI-generated._ It’s in the right neighborhood for the modular farm-top idea, but treat it as **concept art**, not engineering truth.
 
 - **Seed spreading**: broadcast spreader or drop spreader for cover crop, grass, or small grains.
 - **Compost / soil**: compost tote + chute, or a small auger/dispensing hopper for amendments.
@@ -169,7 +184,11 @@ Think of the rear as a **truck bed + mounting interface**. The “attachments”
 **Why this is exciting**
 
 - Quiet, low-maintenance utility platform (no gas) for farms, estates, parks, campuses, and trails.
-- One chassis that can be re-used for passenger tours *or* utility work by swapping the top.
+- One chassis that can be re-used for passenger tours _or_ utility work by swapping the top.
+
+**Second “top” (v2)**
+
+- **Horse carriage / luxury passenger cabin**: the showpiece **tourism / events** top—same chassis, different rear module once the farm bed and mounting story are validated.
 
 **Other “tops” to offer**
 
@@ -303,8 +322,8 @@ This is the north-star visual direction—not a literal part spec, but the mood 
 
 Early AI / render exploration for a **riveted raw-aluminum** carriage direction. For **seating and upholstery**, the cue is an **aluminum pilot-style chair with leather**: structured, aviation-grade feel, not a squishy bench.
 
-| Seat / upholstery inspiration (pilot chair) | Aluminum carriage concept v1 |
-| --- | --- |
+| Seat / upholstery inspiration (pilot chair)                                 | Aluminum carriage concept v1                                      |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | ![Seat inspiration — aluminum pilot chair with leather](images/seat-v1.png) | ![Carriage concept v1 — aluminum](images/v1-concept-aluminum.png) |
 
 ### Concept exploration — wood carriage (v1)
@@ -354,20 +373,24 @@ Consolidated from ongoing email / design threads:
 
 ## 14. Reference images
 
-| Image | Description |
-| --- | --- |
-| `images/mainstreet-broadway.jpg` | Broadway — overall product / context photo (§1) |
-| `images/Broadway-pedicab-shocks.jpg` | Broadway — rear shock / suspension detail (§1) |
-| `images/Broadway-pedicab-crank-drivetrain.jpg` | Broadway — crank & drivetrain (§1) |
-| `images/inspiration.PNG` | Design inspiration reference (§9) |
-| `images/seat-v1.png` | Seat inspiration — aluminum pilot chair / leather (§9) |
-| `images/v1-concept-aluminum.png` | Carriage concept v1 — aluminum (§9) |
-| `images/v1-concept-wood.png` | Carriage concept v1 — wood (§9) |
-| `images/drivetrain-v1.png` | Drivetrain concept v1 (§6) |
-| `images/mainstreet-drivetrain-rear.png` | Rear drivetrain / hub reference — competitor context |
-| `images/wheels.png` | Wheels / tire reference (§5) |
-| `assets/media/image3.png` | Leaf spring reference (§5) |
-| `images/oldschool/*.png` | Early PurplePedi ops archive (§14) |
+| Image                                          | Description                                                |
+| ---------------------------------------------- | ---------------------------------------------------------- |
+| `images/mainstreet-broadway.jpg`               | Broadway — overall product / context photo (§1)            |
+| `images/Broadway-pedicab-shocks.jpg`           | Broadway — rear shock / suspension detail (§1)             |
+| `images/Broadway-pedicab-crank-drivetrain.jpg` | Broadway — crank & drivetrain (§1)                         |
+| `images/inspiration.PNG`                       | Design inspiration reference (§9)                          |
+| `images/seat-v1.png`                           | Seat inspiration — aluminum pilot chair / leather (§9)     |
+| `images/v1-concept-aluminum.png`               | Carriage concept v1 — aluminum (§9)                        |
+| `images/v1-concept-wood.png`                   | Carriage concept v1 — wood (§9)                            |
+| `images/drivetrain-v1.png`                     | Drivetrain concept v1 (§6)                                 |
+| `images/mainstreet-drivetrain-rear.png`        | Rear drivetrain / hub reference — competitor context       |
+| `images/wheels.png`                            | Wheels / tire reference (§6)                               |
+| `images/step-through-frame-reference.png`      | Step-through driver frame reference — example bicycle (§4) |
+| `images/framefarm-v1.png`                      | Farm top — hand-drawn frame sketch v1 (§5)                 |
+| `images/farmconcept-v2.png`                    | Farm modular work platform concept board (§5)              |
+| `images/farmconcept-v2-trailer-trays.png`      | Farm concept + plug flats on flatbed & pull-behind (§5)    |
+| `assets/media/image3.png`                      | Leaf spring reference (§6)                                 |
+| `images/oldschool/*.png`                       | Early PurplePedi ops archive (§15)                         |
 
 ---
 

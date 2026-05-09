@@ -182,6 +182,14 @@ Think of the rear as a **truck bed + mounting interface**. The “attachments”
 
 _Sketch note:_ I’d like the **truck-bed tail / back door** to hinge so it can **open down to the ground**—a ramp or load bridge for rolling equipment and heavy bins on/off the bed. **Height and length still need to be checked** against real gear and ground clearance; for now it’s a “would be nice” direction, not a locked spec.
 
+<a id="farm-v1-concept-top"></a>
+
+### Farm / utility v1 — frame, independent rear suspension, and drivetrain (example)
+
+*Example concept art — not production geometry or BOM.* The study below highlights a **step-through / low step-over frame** suited to mounting a **flat work deck** (farm top), **independent rear suspension** to keep both rear wheels planted in ruts and side-slope, and a **rear-biased drivetrain layout** (motor + reduction at the axle) as the **reference concept** for torque, packaging, and service access.
+
+<img src="images/farm-v1-concept2.PNG" width="420" alt="Farm utility trike v1 concept — frame, independent rear suspension, rear drivetrain packaging study" />
+
 ![Farm top concept v2](images/farmconcept-v2.png)
 
 _The farm concept image above is AI-generated._ It’s in the right neighborhood for the modular farm-top idea, but treat it as **concept art**, not engineering truth.
@@ -416,6 +424,7 @@ Consolidated from ongoing email / design threads:
 | `images/step-through-frame-reference.png`      | Step-through driver frame reference — example bicycle (§4)   |
 | `images/framefarm-v1.png`                      | Farm top — hand-drawn frame sketch v1 (§5)                   |
 | `images/farmconcept-v2.png`                    | Farm modular work platform (AI) — teaser at doc top + §5     |
+| `images/farm-v1-concept2.PNG`                  | Farm / utility v1 — frame, IRS, drivetrain — §5 (between truck-bed sketch and farm concept v2) |
 | `images/farmconcept-v2-trailer-trays.png`      | Farm concept + plug flats on flatbed & pull-behind (§5)      |
 | `assets/media/image3.png`                      | Leaf spring reference (§6)                                   |
 | `images/oldschool/*.png`                       | Early PurplePedi ops archive (§15)                           |

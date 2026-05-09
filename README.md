@@ -6,6 +6,15 @@ I started in **commercial pedicabs**, but PurplePedi is not meant to end as “a
 
 **First goal:** ship the **farm / modular work top** and prove the chassis and mounting interfaces in real use. Then layer the showpiece tops on top of a platform that already works.
 
+<a id="visual-teasers"></a>
+
+**One frame for both:** the **same chassis** is meant to carry **farm / modular work** duty _and_ **luxury carriage / pedicab-style** passenger service—different tops, shared platform. Below are **small teasers** only (not build drawings). Full-size references stay in **[§5](#5-modular-platform-one-chassis-many-tops)** (farm / modular) and **[§10](#10-carriage-passengers-and-styling)** (carriage / north-star).
+
+|                                   North-star mood (luxury, metal, craft)                                    |                                            Farm inspiration                                            |                                          Farm modular work platform                                          |
+| :---------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
+| <img src="images/inspiration.PNG" width="200" alt="North-star design inspiration — luxury, metal, craft" /> | <img src="images/farminspiration.png" width="200" alt="Farm inspiration — equipment and field mood" /> | <img src="images/farmconcept-v2.png" width="200" alt="AI-generated modular pedicab work platform concept" /> |
+|                             _Not a parts spec — the visual language to chase._                              |                             _Rough terrain, tools, and work-first energy._                             |                         _Exploratory render — details will change with engineering._                         |
+
 ---
 
 ## Table of contents
@@ -158,13 +167,14 @@ The long-term product idea is a **standardized chassis** with a **swappable rear
 - **Farm / off-road utility**: a battery-powered, modular “farm tool” on the same chassis. The goal is a high-quality utility platform that can do light work where gas equipment (or a tractor) is overkill.
   - **Competition (urban / light utility—not farm-first)**: products like the [Oh Wow Cycles Conductor Plus Rickshaw](https://ohwowcycles.com/products/conductor-plus-rickshaw) and [Vok U](https://vokbikes.com/vok-u/) show what exists for narrow paths, city maintenance, and service teams. They are **not really built for farm work**—different duty cycle, different loads, and different attachment expectations than a field-first modular bed.
 
-  | [Oh Wow Cycles — Conductor Plus](https://ohwowcycles.com/products/conductor-plus-rickshaw) | [Vok U](https://vokbikes.com/vok-u/) |
-  |:---:|:---:|
+  |                                                    [Oh Wow Cycles — Conductor Plus](https://ohwowcycles.com/products/conductor-plus-rickshaw)                                                    |                                                  [Vok U](https://vokbikes.com/vok-u/)                                                  |
+  | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
   | <a href="https://ohwowcycles.com/products/conductor-plus-rickshaw"><img src="images/ohwow-competition.png" width="200" alt="Oh Wow Cycles Conductor Plus Rickshaw (competition reference)"/></a> | <a href="https://vokbikes.com/vok-u/"><img src="images/VOKUbike-competition.png" width="200" alt="Vok U (competition reference)"/></a> |
-
   - Consider **thicker / higher-volume tires** (and potentially different tread) to improve comfort and traction off-road.
 
 ### Farm top: example implements / attachments
+
+Teaser previews for farm + modular work mood and AI board: **[top of document](#visual-teasers)**.
 
 Think of the rear as a **truck bed + mounting interface**. The “attachments” can be swappable just like the tops:
 
@@ -256,7 +266,7 @@ Newer sketch for how **transmission / final-drive packaging** might sit relative
 
 ![PurplePedi transmission layout concept v2](images/transmission-v1-idea.png)
 
-**Rear tires: bigger diameter for farm *and* pedicab**  
+**Rear tires: bigger diameter for farm _and_ pedicab**  
 Bias toward **larger rear wheels / tires** (within brake, gearing, and frame limits). More **rollover** and footprint help on **rough farm surfaces**—ruts, gravel, pasture tracks, soft ground—and the same trait improves the **pedicab experience** on **bad urban pavement** (chipped asphalt, brick, seams, potholes). One rear-wheel strategy that supports both **farm work** and **passenger carriage** duty without feeling like a skinny BMX-class rear end on a heavy trike.
 
 **Rear hub / brake reference (Main Street–style context)**  
@@ -326,6 +336,8 @@ Explore **Amish carriage makers** (or similar coachbuilders) for commissioned wo
 
 ### Design inspiration (reference)
 
+Small previews of this library also appear **[at the top of this document](#visual-teasers)**.
+
 This is the north-star visual direction—not a literal part spec, but the mood and material language to chase (luxury, metal, craft).
 
 ![Design inspiration reference](images/inspiration.PNG)
@@ -385,27 +397,28 @@ Consolidated from ongoing email / design threads:
 
 ## 14. Reference images
 
-| Image                                          | Description                                                |
-| ---------------------------------------------- | ---------------------------------------------------------- |
-| `images/mainstreet-broadway.jpg`               | Broadway — overall product / context photo (§1)            |
-| `images/Broadway-pedicab-shocks.jpg`           | Broadway — rear shock / suspension detail (§1)             |
-| `images/Broadway-pedicab-crank-drivetrain.jpg` | Broadway — crank & drivetrain (§1)                         |
-| `images/inspiration.PNG`                       | Design inspiration reference (§9)                          |
-| `images/seat-v1.png`                           | Seat inspiration — aluminum pilot chair / leather (§9)     |
-| `images/v1-concept-aluminum.png`               | Carriage concept v1 — aluminum (§9)                        |
-| `images/v1-concept-wood.png`                   | Carriage concept v1 — wood (§9)                            |
-| `images/drivetrain-v1.png`                     | Drivetrain concept v1 (§7)                                 |
-| `images/transmission-v1-idea.png`             | Transmission layout concept v2 (§7)                        |
-| `images/mainstreet-drivetrain-rear.png`        | Rear drivetrain / hub reference — competitor context       |
-| `images/ohwow-competition.png`                 | Oh Wow Cycles — competition reference photo (§5)           |
-| `images/VOKUbike-competition.png`             | Vok U — competition reference photo (§5)                   |
-| `images/wheels.png`                            | Wheels / tire reference (§6)                               |
-| `images/step-through-frame-reference.png`      | Step-through driver frame reference — example bicycle (§4) |
-| `images/framefarm-v1.png`                      | Farm top — hand-drawn frame sketch v1 (§5)                 |
-| `images/farmconcept-v2.png`                    | Farm modular work platform concept board (§5)              |
-| `images/farmconcept-v2-trailer-trays.png`      | Farm concept + plug flats on flatbed & pull-behind (§5)    |
-| `assets/media/image3.png`                      | Leaf spring reference (§6)                                 |
-| `images/oldschool/*.png`                       | Early PurplePedi ops archive (§15)                         |
+| Image                                          | Description                                                  |
+| ---------------------------------------------- | ------------------------------------------------------------ |
+| `images/mainstreet-broadway.jpg`               | Broadway — overall product / context photo (§1)              |
+| `images/Broadway-pedicab-shocks.jpg`           | Broadway — rear shock / suspension detail (§1)               |
+| `images/Broadway-pedicab-crank-drivetrain.jpg` | Broadway — crank & drivetrain (§1)                           |
+| `images/inspiration.PNG`                       | North-star design inspiration — also teaser at doc top (§10) |
+| `images/farminspiration.png`                   | Farm inspiration — also teaser at doc top (§5)               |
+| `images/seat-v1.png`                           | Seat inspiration — aluminum pilot chair / leather (§10)      |
+| `images/v1-concept-aluminum.png`               | Carriage concept v1 — aluminum (§10)                         |
+| `images/v1-concept-wood.png`                   | Carriage concept v1 — wood (§10)                             |
+| `images/drivetrain-v1.png`                     | Drivetrain concept v1 (§7)                                   |
+| `images/transmission-v1-idea.png`              | Transmission layout concept v2 (§7)                          |
+| `images/mainstreet-drivetrain-rear.png`        | Rear drivetrain / hub reference — competitor context         |
+| `images/ohwow-competition.png`                 | Oh Wow Cycles — competition reference photo (§5)             |
+| `images/VOKUbike-competition.png`              | Vok U — competition reference photo (§5)                     |
+| `images/wheels.png`                            | Wheels / tire reference (§6)                                 |
+| `images/step-through-frame-reference.png`      | Step-through driver frame reference — example bicycle (§4)   |
+| `images/framefarm-v1.png`                      | Farm top — hand-drawn frame sketch v1 (§5)                   |
+| `images/farmconcept-v2.png`                    | Farm modular work platform (AI) — teaser at doc top + §5     |
+| `images/farmconcept-v2-trailer-trays.png`      | Farm concept + plug flats on flatbed & pull-behind (§5)      |
+| `assets/media/image3.png`                      | Leaf spring reference (§6)                                   |
+| `images/oldschool/*.png`                       | Early PurplePedi ops archive (§15)                           |
 
 ---
 

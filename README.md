@@ -158,6 +158,10 @@ The long-term product idea is a **standardized chassis** with a **swappable rear
 - **Farm / off-road utility**: a battery-powered, modular “farm tool” on the same chassis. The goal is a high-quality utility platform that can do light work where gas equipment (or a tractor) is overkill.
   - **Competition (urban / light utility—not farm-first)**: products like the [Oh Wow Cycles Conductor Plus Rickshaw](https://ohwowcycles.com/products/conductor-plus-rickshaw) and [Vok U](https://vokbikes.com/vok-u/) show what exists for narrow paths, city maintenance, and service teams. They are **not really built for farm work**—different duty cycle, different loads, and different attachment expectations than a field-first modular bed.
 
+  | [Oh Wow Cycles — Conductor Plus](https://ohwowcycles.com/products/conductor-plus-rickshaw) | [Vok U](https://vokbikes.com/vok-u/) |
+  |:---:|:---:|
+  | <a href="https://ohwowcycles.com/products/conductor-plus-rickshaw"><img src="images/ohwow-competition.png" width="200" alt="Oh Wow Cycles Conductor Plus Rickshaw (competition reference)"/></a> | <a href="https://vokbikes.com/vok-u/"><img src="images/VOKUbike-competition.png" width="200" alt="Vok U (competition reference)"/></a> |
+
   - Consider **thicker / higher-volume tires** (and potentially different tread) to improve comfort and traction off-road.
 
 ### Farm top: example implements / attachments
@@ -246,6 +250,14 @@ Any trike-length chain path needs a deliberate **tensioner / idler** strategy so
 Early idea for layout / packaging—iterate with the frame builder as the hub, differential, and motor choices firm up.
 
 ![PurplePedi drivetrain concept v1](images/drivetrain-v1.png)
+
+**PurplePedi transmission layout concept (v2)**  
+Newer sketch for how **transmission / final-drive packaging** might sit relative to the rear axle—still exploratory; lock up once motor, hub or gearbox, and differential choices are set.
+
+![PurplePedi transmission layout concept v2](images/transmission-v1-idea.png)
+
+**Rear tires: bigger diameter for farm *and* pedicab**  
+Bias toward **larger rear wheels / tires** (within brake, gearing, and frame limits). More **rollover** and footprint help on **rough farm surfaces**—ruts, gravel, pasture tracks, soft ground—and the same trait improves the **pedicab experience** on **bad urban pavement** (chipped asphalt, brick, seams, potholes). One rear-wheel strategy that supports both **farm work** and **passenger carriage** duty without feeling like a skinny BMX-class rear end on a heavy trike.
 
 **Rear hub / brake reference (Main Street–style context)**  
 The image below illustrates the **axle-mounted disc** and **chain drive** layout common on existing pedicab designs—useful as a **reference**, not necessarily the final PurplePedi architecture.
@@ -382,8 +394,11 @@ Consolidated from ongoing email / design threads:
 | `images/seat-v1.png`                           | Seat inspiration — aluminum pilot chair / leather (§9)     |
 | `images/v1-concept-aluminum.png`               | Carriage concept v1 — aluminum (§9)                        |
 | `images/v1-concept-wood.png`                   | Carriage concept v1 — wood (§9)                            |
-| `images/drivetrain-v1.png`                     | Drivetrain concept v1 (§6)                                 |
+| `images/drivetrain-v1.png`                     | Drivetrain concept v1 (§7)                                 |
+| `images/transmission-v1-idea.png`             | Transmission layout concept v2 (§7)                        |
 | `images/mainstreet-drivetrain-rear.png`        | Rear drivetrain / hub reference — competitor context       |
+| `images/ohwow-competition.png`                 | Oh Wow Cycles — competition reference photo (§5)           |
+| `images/VOKUbike-competition.png`             | Vok U — competition reference photo (§5)                   |
 | `images/wheels.png`                            | Wheels / tire reference (§6)                               |
 | `images/step-through-frame-reference.png`      | Step-through driver frame reference — example bicycle (§4) |
 | `images/framefarm-v1.png`                      | Farm top — hand-drawn frame sketch v1 (§5)                 |

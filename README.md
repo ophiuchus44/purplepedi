@@ -406,8 +406,4 @@ Photos from the first era running the pedicab as a **commercial service**—unve
 
 ![Riders on board](images/oldschool/riders.png)
 
-![On the job](images/oldschool/me.png)
-
----
-
-_Living doc order: competition → constraints → chassis → rear ride → drivetrain → front → brakes → carriage & concepts → electrical → parking brake → archive._
+![On the job](images/oldschool/me.png?v=3)

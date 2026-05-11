@@ -2,20 +2,22 @@
 
 The Rolls Royce of Trikes
 
-I started in **commercial pedicabs**, but PurplePedi is not meant to end as “a nicer pedicab.” The goal is a **modular, purpose-built trike platform**—one chassis that can wear different **tops** for farm work, cargo, service fleets, events, and (later) a luxury passenger carriage—not pedicab-only.
+PurplePedi is not meant to end as “a nicer pedicab.” The goal is a **modular, purpose-built trike platform**—one chassis that can wear different **tops** for farm work, cargo, service fleets, events, and (later) a luxury passenger carriage—not pedicab-only.
 
 **First goal:** ship the **farm / modular work top** and prove the chassis and mounting interfaces in real use. Then layer the showpiece tops on top of a platform that already works.
 
-**Ride quality (explicit):** PurplePedi is intended to use **independent rear suspension (IRS)**—not a single beam axle with a “good enough” trike ride. The target is a **smooth, controlled ride** for passengers and operators on rough pavement, chipseal, fields, and two-track: isolation from bumps, both rear wheels staying planted in ruts and side-slope, and less pitching than a solid rear. That comfort bar is part of the **luxury / small-vehicle** positioning, not an afterthought.
 
-<a id="visual-teasers"></a>
-
-**One frame for both:** the **same chassis** is meant to carry **farm / modular work** duty _and_ **luxury carriage / pedicab-style** passenger service—different tops, shared platform. Below are **small teasers** only (not build drawings). Full-size references stay in **[§5](#5-modular-platform-one-chassis-many-tops)** (farm / modular) and **[§10](#10-carriage-passengers-and-styling)** (carriage / north-star).
 
 |                                   North-star mood (luxury, metal, craft)                                    |                                            Farm inspiration                                            |                                          Farm modular work platform                                          |
 | :---------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
 | <img src="images/inspiration.PNG" width="200" alt="North-star design inspiration — luxury, metal, craft" /> | <img src="images/farminspiration.png" width="200" alt="Farm inspiration — equipment and field mood" /> | <img src="images/farmconcept-v2.png" width="200" alt="AI-generated modular pedicab work platform concept" /> |
 |                             _Not a parts spec — the visual language to chase._                              |                             _Rough terrain, tools, and work-first energy._                             |                         _Exploratory render — details will change with engineering._                         |
+
+**Latest direction (v2) — most up-to-date thinking**
+
+![PurplePedi — main platform concept v2 (latest direction)](images/purplepedi-main-v2.png)
+
+![PurplePedi — farm / modular work configuration v2 (latest direction)](images/farm-main-v2.png)
 
 ---
 
@@ -130,6 +132,9 @@ Battery must support **e-assist motor(s)**, **running lights**, **turn signals /
 **Charging model**  
 Plug-in after shifts is fine; **regen / alternator** optional future enhancement—not required for v1.
 
+**Human power (no assist)**  
+An operator must still be able to **pedal the trike with no electrical power** (dead battery, limp-home, or any context where the motor cannot contribute). It does not need to be **easy** at full gross weight on a steep grade, but it must remain **physically achievable** without assist—gear range, mechanical drag, and what “pedalable” means at which load should be written down as the drivetrain firms up.
+
 **Operator workflow**  
 Parking brake behavior matters for pickups, drop-offs, and tipping moments—see [§12](#12-parking-brake-and-operator-workflow).
 
@@ -137,7 +142,7 @@ Parking brake behavior matters for pickups, drop-offs, and tipping moments—see
 Luxury-first: materials and components should tolerate **commercial duty** and still photograph well.
 
 **Rear suspension architecture**  
-Treat **independent rear suspension** as a **first-class requirement** for the platform (farm and carriage tops). Solid-axle trikes can work for slow utility, but they trade away the **smooth ride and traction** this project is chasing—especially when the rear is loaded, offset, or crossing uneven ground.
+**Intent today** is **independent rear suspension (IRS)** for the platform (farm and carriage tops), because it matches the **ride and traction** story in [§6](#6-rear-suspension-wheels-and-ride-quality). That is **not** a claim that IRS is automatically correct—it is the author’s **hypothesis** until a qualified engineer runs **weight, cost, packaging, and durability** against alternatives. Read the **non-engineer disclaimer at the top of §6** before treating IRS as immutable. Solid-axle trikes can work for slow utility and may win on **simplicity or mass** after review.
 
 ---
 
@@ -181,7 +186,9 @@ The long-term product idea is a **standardized chassis** with a **swappable rear
 
 Teaser previews for farm + modular work mood and AI board: **[top of document](#visual-teasers)**.
 
-Think of the rear as a **truck bed + mounting interface**. The “attachments” can be swappable just like the tops:
+Think of the rear as a **truck bed + mounting interface**. Plan for a **dump / tilt** function: a **lever** (mechanical first—power tilt optional later) so the operator can **raise the bed on a pivot** and **tip it at an angle** for **gravity offload** of loose material—**dirt, compost, mulch, gravel**, etc.—without shoveling the whole load by hand. Ride-height **latches**, **max tilt angle**, and **loaded CG** with the chassis parked need real engineering; the intent is **small-truck dump-bed behavior**, not a cosmetic flat deck only.
+
+The “attachments” can be swappable just like the tops:
 
 ![Farm top — hand-drawn frame sketch v1](images/framefarm-v1.png)
 
@@ -200,8 +207,8 @@ _Sketch note:_ I’d like the **truck-bed tail / back door** to hinge so it can 
 _The farm concept image above is AI-generated._ It’s in the right neighborhood for the modular farm-top idea, but treat it as **concept art**, not engineering truth.
 
 - **Seed spreading**: broadcast spreader or drop spreader for cover crop, grass, or small grains.
-- **Compost / soil**: compost tote + chute, or a small auger/dispensing hopper for amendments.
-- **Water / irrigation**: small tank + hose reel for spot watering (trees, new plantings).
+- **Compost / soil**: compost tote + chute, or a small auger/dispensing hopper for amendments; **pairs with dump / tilt bed** for loose bulk offload.
+- **Dump / tilt bed**: **lever** (mechanical v1) to pivot the truck bed upward and **tip the load** for offload—dirt, compost, mulch, gravel—aligned with the paragraph above; coordinate latches and tailgate / ramp behavior in CAD.
 - **Spraying**: low-volume sprayer for orchard/vineyard rows (where appropriate and safe).
 - **Tool carrier**: racks for shovels, rakes, hand tools, buckets; lockable storage.
 - **Harvest / field bins**: modular crates, produce bins, or insulated cooler box for farm stands.
@@ -236,11 +243,17 @@ Implementation note: define a mechanical + electrical interface (mount points, l
 
 This section leads the technical story **from the contact patch backward**: fix ride and load handling first, then propagate decisions forward.
 
+<p align="center"><strong>⚠️ 🚨 ⚠️ 🚨 ⚠️ 🚨 ⚠️</strong></p>
+<h2 align="center"><strong><u>I am not a mechanical engineer — treat this whole section as questions, not answers.</u></strong></h2>
+<p align="center"><strong>⚠️ 🚨 ⚠️ 🚨 ⚠️ 🚨 ⚠️</strong></p>
+
+What follows is **my current best guess** at what will feel right on **rough ground and long shifts**. I **believe** **true independent rear suspension (IRS)** is the right north star for ride and keeping both rear tires loaded—but I **do not know** if that is **worth the weight, cost, complexity, and unsprung mass** once everything else on the vehicle is stacked in (battery, dump bed, motor path, pedal drive, service access). There may be a **lighter**, **cheaper**, or **simpler** architecture that is “good enough,” or a **hybrid** (e.g. semi-independent / twist / better tires and damping only) that a real suspension engineer would prefer. **I could be wrong about IRS—or about anything else in this README.** The job of a hired frame/suspension engineer is to **challenge every assumption here** and recommend what actually meets the load cases and budget.
+
 **Independent rear suspension (IRS) — intent**  
-The chassis should pursue **true IRS** (each rear wheel moves on its own kinematic path) so the vehicle can **filter bumps**, **keep both tires loaded** on uneven surfaces, and avoid the **hobby-horse pitch** common when one wheel hits a hole and the whole rear axle tilts. That directly supports the **“smooth ride”** promise for operators (long shifts, farm tasks) and passengers (comfort and perceived quality).
+**If an IRS-class rear still wins after professional trade study**, the chassis should pursue **true IRS** (each rear wheel moves on its own kinematic path) so the vehicle can **filter bumps**, **keep both tires loaded** on uneven surfaces, and avoid the **hobby-horse pitch** common when one wheel hits a hole and the whole rear axle tilts. That directly supports the **“smooth ride”** promise for operators (long shifts, farm tasks) and passengers (comfort and perceived quality).
 
 **Why “smooth” is non-negotiable here**  
-Rough inputs do not only feel bad—they **fatigue passengers**, **shake cargo**, and **feed impulse loads into the frame, motor mounts, and chain path**, which accelerates wear and noise. IRS is not the only tool (tires, damping, and sprung mass matter too), but it is the main lever for **rear axle independence** on a three-wheel platform.
+Rough inputs do not only feel bad—they **fatigue passengers**, **shake cargo**, and **feed impulse loads into the frame, motor mounts, and chain path**, which accelerates wear and noise. In a **split-rear-wheel layout**, IRS is a strong lever for **rear axle independence**, but **tires, damping, sprung mass, and simpler axle concepts** can also move the needle—none of this replaces a proper trade study.
 
 **Reference hardware class (not a locked BOM)**  
 Off-road **buggy / crosskart** markets package compact **trailing-arm or A-arm rear modules** with hubs, brakes, and pickup points—useful as a **reference for layout and components**, even though PurplePedi loads and gearing will differ.
@@ -255,7 +268,7 @@ IRS plus human-scale pedal assist is **not** a bolt-on bicycle problem:
 - **Unsprung mass**: heavy hubs, brakes, and half-shafts at the wheel fight ride quality unless spring/damper choices account for it.
 - **Packaging**: motor, reduction, and battery must live **around** suspension pivots without binding steering, travel, or service access.
 - **Alignment and maintenance**: two corners means **bushings, toe, and camber** discipline—more like a small car than a bike shop tune-up.
-- **Cost / complexity**: IRS trades **simplicity** for **ride and traction**; that trade is intentional for PurplePedi but real on BOM and build.
+- **Cost / complexity**: IRS trades **simplicity** for **ride and traction**; this README **currently assumes** that trade is worth it—but a BOM and field review might say otherwise.
 
 **Product direction (question the README is answering)**  
 For a **motorcycle-scale / go-kart-scale off-road** machine with **pedal + e-assist**, there is rarely one “perfect” shelf IRS that also solves **bicycle-chain drive to both wheels**. Real builds usually converge on **hub motors**, **mid-drive through a differential**, or **mid-drive to one side with mechanical compromise**. Crosskart/buggy IRS kits help with **suspension corners**; the **final-drive architecture** still has to be chosen for **torque, chainline, and service** together with the frame builder.

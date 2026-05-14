@@ -2,6 +2,10 @@
 
 The Rolls Royce of Trikes
 
+![PurplePedi — swingarm version (design v1)](images/swingarm-designv1.png)
+
+![PurplePedi — farm / modular work configuration v2 (latest direction)](images/farm-main-v2.png)
+
 PurplePedi is not meant to end as “a nicer pedicab.” The goal is a **modular, purpose-built trike platform**—one chassis that can wear different **tops** for farm work, cargo, service fleets, events, and (later) a luxury passenger carriage—not pedicab-only.
 
 **First goal:** ship the **farm / modular work top** and prove the chassis and mounting interfaces in real use. Then layer the showpiece tops on top of a platform that already works.
